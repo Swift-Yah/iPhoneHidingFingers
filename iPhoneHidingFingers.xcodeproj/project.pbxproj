@@ -38,8 +38,8 @@
 		53DCAC111C7D1C040029B65A = {
 			isa = PBXGroup;
 			children = (
-				53DCAC1B1C7D1C040029B65A /* Products */,
 				53DCAC1C1C7D1C040029B65A /* iPhoneHidingFingers */,
+				53DCAC1B1C7D1C040029B65A /* Products */,
 			);
 			sourceTree = "<group>";
 		};

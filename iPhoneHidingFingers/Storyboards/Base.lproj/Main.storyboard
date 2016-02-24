@@ -16,12 +16,74 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's Play" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WZm-LE-0of">
+                                <rect key="frame" x="20" y="30" width="280" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="HcE-x9-2BX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Charade" translatesAutoresizingMaskIntoConstraints="NO" id="b1v-tl-Cp9">
+                                <rect key="frame" x="20" y="105" width="280" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="3wL-I6-XPN"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to many fingers I'm hiding?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MB1-kb-GdL">
+                                <rect key="frame" x="20" y="320" width="280" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YWh-ia-k8l">
+                                <rect key="frame" x="110" y="355" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="TXO-cP-LOs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="11y-qX-MkL">
+                                <rect key="frame" x="20" y="400" width="280" height="30"/>
+                                <state key="normal" title="Go"/>
+                                <connections>
+                                    <action selector="tryFindOutAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="P5Z-sE-MAR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.3529411764705882" green="0.78431372549019607" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="YWh-ia-k8l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6aK-ec-EUB"/>
+                            <constraint firstItem="MB1-kb-GdL" firstAttribute="top" secondItem="b1v-tl-Cp9" secondAttribute="bottom" constant="35" id="8km-SU-HVC"/>
+                            <constraint firstAttribute="trailing" secondItem="MB1-kb-GdL" secondAttribute="trailing" constant="20" id="Axi-aE-BNN"/>
+                            <constraint firstItem="11y-qX-MkL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="Bif-Qz-NWh"/>
+                            <constraint firstItem="b1v-tl-Cp9" firstAttribute="top" secondItem="WZm-LE-0of" secondAttribute="bottom" constant="35" id="NSf-Sl-Kjc"/>
+                            <constraint firstAttribute="trailing" secondItem="WZm-LE-0of" secondAttribute="trailing" constant="20" id="OSU-La-ST6"/>
+                            <constraint firstItem="WZm-LE-0of" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="One-78-ddI"/>
+                            <constraint firstAttribute="trailing" secondItem="11y-qX-MkL" secondAttribute="trailing" constant="20" id="Wsx-tl-z02"/>
+                            <constraint firstItem="WZm-LE-0of" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="Zsg-6t-4rV"/>
+                            <constraint firstItem="MB1-kb-GdL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="aS0-En-y0h"/>
+                            <constraint firstItem="YWh-ia-k8l" firstAttribute="top" secondItem="MB1-kb-GdL" secondAttribute="bottom" constant="15" id="bzL-Ea-PFk"/>
+                            <constraint firstAttribute="trailing" secondItem="b1v-tl-Cp9" secondAttribute="trailing" constant="20" id="bzv-eF-yAa"/>
+                            <constraint firstItem="11y-qX-MkL" firstAttribute="top" secondItem="YWh-ia-k8l" secondAttribute="bottom" constant="15" id="fnF-eW-kwU"/>
+                            <constraint firstItem="b1v-tl-Cp9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="jtT-rj-VID"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="attemptTextField" destination="YWh-ia-k8l" id="SfT-u1-qT2"/>
+                        <outlet property="statusImageView" destination="b1v-tl-Cp9" id="9MJ-Hh-WTh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="380" y="337"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Charade" width="960" height="600"/>
+    </resources>
 </document>
