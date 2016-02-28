@@ -44,11 +44,6 @@ public class HomeViewController: UIViewController, UITextFieldDelegate {
     // MARK: UITextFieldDelegate methods
     
     public func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
-        
-        guard !string.isEmpty else {
-            return true
-        }
-        
         var newString = String()
         
         if let currentText = textField.text {
