@@ -45,6 +45,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="zuq-Fs-GR9"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="11y-qX-MkL">
                                 <rect key="frame" x="20" y="400" width="280" height="30"/>
@@ -75,7 +78,9 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="attemptTextField" destination="YWh-ia-k8l" id="SfT-u1-qT2"/>
+                        <outlet property="bottomConstraint" destination="8km-SU-HVC" id="PnQ-LU-QRi"/>
                         <outlet property="statusImageView" destination="b1v-tl-Cp9" id="9MJ-Hh-WTh"/>
+                        <outlet property="topConstraint" destination="NSf-Sl-Kjc" id="DGw-kS-dxQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
